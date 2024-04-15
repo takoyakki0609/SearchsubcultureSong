@@ -1,7 +1,7 @@
-import React from "react";
+import * as St from "../animation/Animation.styled";
 
 const Vocaloid = () => {
-  return <div></div>;
+  return <St.Container>Vocaloid</St.Container>;
 };
 
 export default Vocaloid;

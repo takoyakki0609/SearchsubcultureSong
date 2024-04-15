@@ -1,7 +1,7 @@
-import React from "react";
+import * as St from "../animation/Animation.styled";
 
 const Utaite = () => {
-  return <div></div>;
+  return <St.Container>Utaite</St.Container>;
 };
 
 export default Utaite;

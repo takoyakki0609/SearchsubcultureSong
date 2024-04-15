@@ -57,28 +57,16 @@ const GlobalStyle = createGlobalStyle`
 
     };
 
-    body {
-                font-family: 'ChosunGu';
-    }
+ 
     a {
-                font-family: "GmarketSansMedium";
+           text-decoration: none;
+           color: inherit;
     }
     html {
         font-size: 62.5%;
     }
-    button {
-        cursor: pointer;
-        font-family: 'ChosunGu';
-    }
-    input, textarea {
-        font-family: 'ChosunGu';
-    }
-    @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
+
+ 
     @font-face {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
@@ -86,12 +74,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     }
 
-    @font-face {
-    font-family: 'ChosunGu';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 `;
 
 export default GlobalStyle;

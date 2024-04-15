@@ -1,7 +1,7 @@
-import React from "react";
+import * as St from "./Footer.styled";
 
 const Footer = () => {
-  return <div>푸터</div>;
+  return <St.Container>푸터</St.Container>;
 };
 
 export default Footer;
