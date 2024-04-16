@@ -4,4 +4,4 @@
 
 ## 사용 기술
 
-React, TypeScript, Python
+React, TypeScript, Recoil, Python

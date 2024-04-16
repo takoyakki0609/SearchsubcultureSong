@@ -6,16 +6,18 @@ export const TitleWrapper = styled.div`
   text-align: center;
 `;
 export const TItle = styled.h1`
-  font-size: 6rem;
-`;
-export const DataWrapper = styled.ul`
   font-size: 3rem;
+`;
+
+/* navBar style */
+export const DataWrapper = styled.ul`
+  font-size: 2rem;
 
   margin-top: 10rem;
 
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 2rem;
 `;
 export const DataTitle = styled.li`
   &:hover {
@@ -24,7 +26,7 @@ export const DataTitle = styled.li`
     transition: 0.3s;
   }
 `;
-/* searchInput */
+/* searchInput style*/
 export const SearchWrapper = styled.form`
   margin-top: 5rem;
   display: flex;
@@ -38,3 +40,6 @@ export const SearchBtn = styled.button`
   margin-left: 2rem;
   padding: 1rem 2rem;
 `;
+
+export const ButtonWrapper = styled.article``;
+export const SelecButton = styled.button``;
