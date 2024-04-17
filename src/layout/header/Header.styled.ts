@@ -41,5 +41,11 @@ export const SearchBtn = styled.button`
   padding: 1rem 2rem;
 `;
 
-export const ButtonWrapper = styled.article``;
+export const ButtonWrapper = styled.article`
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+
+  gap: 2rem;
+`;
 export const SelecButton = styled.button``;
