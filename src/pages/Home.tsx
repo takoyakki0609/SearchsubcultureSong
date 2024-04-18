@@ -1,7 +1,12 @@
 import React from "react";
+import SearchResult from "./searchResult/SearchResult";
 
 const Home = () => {
-  return <>home</>;
+  return (
+    <>
+      <SearchResult />
+    </>
+  );
 };
 
 export default Home;

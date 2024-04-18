@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import { SongData } from "../types/types";
 
 export const typeState = atom({
   key: "typeState",
@@ -8,4 +9,9 @@ export const typeState = atom({
 export const clickState = atom({
   key: "clickState",
   default: "",
+});
+
+export const searchDataState = atom<SongData[]>({
+  key: "searchDataState",
+  default: [],
 });
