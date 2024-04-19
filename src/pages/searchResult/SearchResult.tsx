@@ -7,8 +7,6 @@ const SearchResult = () => {
   const songData = useRecoilValue(searchDataState);
   const classification = useRecoilValue(typeState);
 
-  console.log(songData);
-
   return (
     <St.Container>
       <St.Tbody>

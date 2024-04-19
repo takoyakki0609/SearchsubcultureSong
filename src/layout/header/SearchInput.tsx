@@ -29,7 +29,7 @@ const SearchInput = () => {
     <>
       <St.SearchWrapper onSubmit={handleSearch}>
         <St.SearchArea
-          placeholder="노래제목 또는 가수명으로 검색이 가능합니다"
+          placeholder="이곳에 검색해주세요"
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
