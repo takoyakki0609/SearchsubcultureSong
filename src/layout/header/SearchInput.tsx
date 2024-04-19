@@ -16,23 +16,34 @@ const SearchInput = () => {
       item.some((info) => info.toLowerCase().includes(searchTerm.toLowerCase()))
     );
   };
-  console.log(results);
 
-  const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSearch = () => {
     const allData = [anisong, utaite, vocaloid];
     const foundItems = allData.map((data) => searchData(data)).flat();
     setResults(foundItems);
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSearch();
+    }
+  };
+
   return (
     <>
-      <St.SearchWrapper onSubmit={handleSearch}>
+      <St.SearchWrapper
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleSearch();
+        }}
+      >
         <St.SearchArea
           placeholder="이곳에 검색해주세요"
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
+          onKeyDown={handleKeyPress}
         ></St.SearchArea>
 
         <St.SearchBtn type="submit">검색</St.SearchBtn>
