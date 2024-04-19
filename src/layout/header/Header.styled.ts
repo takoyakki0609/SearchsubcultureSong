@@ -9,6 +9,11 @@ export const TItle = styled.h1`
   font-size: 3rem;
 `;
 
+export const Info = styled.p`
+  margin-top: 2rem;
+  font-size: 1.5rem;
+`;
+
 /* searchInput style*/
 export const SearchWrapper = styled.form`
   margin-top: 5rem;
