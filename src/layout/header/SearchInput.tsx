@@ -4,12 +4,14 @@ import anisong from "../../api/animation.json";
 import utaite from "../../api/utaite.json";
 import vocaloid from "../../api/vocaloid.json";
 import { useRecoilState } from "recoil";
-import { searchDataState } from "../../state/Atom";
+import { searchDataState, searchValueState } from "../../state/Atom";
 import { SongData } from "../../types/types";
 
 const SearchInput = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [results, setResults] = useRecoilState<SongData[]>(searchDataState);
+  const [recentSearchTerm, setRecentSearchTerm] =
+    useRecoilState(searchValueState);
 
   const searchData = (data: SongData[]): SongData[] => {
     return data.filter((item) =>
@@ -27,6 +29,8 @@ const SearchInput = () => {
     if (e.key === "Enter") {
       e.preventDefault();
       handleSearch();
+      setRecentSearchTerm(searchTerm);
+      setSearchTerm("");
     }
   };
 

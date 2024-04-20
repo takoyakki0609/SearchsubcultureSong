@@ -9,11 +9,23 @@ export const TItle = styled.h1`
   font-size: 3rem;
 `;
 
-export const Info = styled.p`
-  margin-top: 2rem;
-  font-size: 1.5rem;
-`;
+/* navBar style */
+export const DataWrapper = styled.ul`
+  font-size: 2rem;
 
+  margin-top: 10rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+`;
+export const DataTitle = styled.li`
+  &:hover {
+    cursor: pointer;
+    color: #fca311;
+    transition: 0.3s;
+  }
+`;
 /* searchInput style*/
 export const SearchWrapper = styled.form`
   margin-top: 5rem;

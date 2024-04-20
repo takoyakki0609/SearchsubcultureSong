@@ -6,8 +6,8 @@ export const typeState = atom({
   default: "",
 });
 
-export const clickState = atom({
-  key: "clickState",
+export const searchValueState = atom({
+  key: "searchValueState",
   default: "",
 });
 
