@@ -6,7 +6,7 @@ export const Container = styled.section`
   ${({ theme }) => theme.mediaQuery.sm`
 
 
-  `};
+  `}; 
   ${({ theme }) => theme.mediaQuery.lg`
 
 
