@@ -36,4 +36,12 @@ export const Container = styled.section`
     margin-top: 4rem;
     font-size: 2rem;
   }
+  ${({ theme }) => theme.mediaQuery.sm`
+  font-size:1rem;
+
+`};
+  ${({ theme }) => theme.mediaQuery.lg`
+
+
+`};
 `;

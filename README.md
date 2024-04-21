@@ -5,3 +5,7 @@
 ## 사용 기술
 
 React, TypeScript, Recoil, Python
+
+### 추가 할 기능
+
+즐겨찾기, 다크모드
