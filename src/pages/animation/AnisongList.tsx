@@ -5,6 +5,7 @@ import * as St from "./Animation.styled";
 
 const AnisongList = () => {
   const classification = useRecoilValue(typeState);
+
   return (
     <>
       <St.Table>

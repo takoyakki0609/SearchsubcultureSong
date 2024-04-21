@@ -17,4 +17,5 @@ export const Tbody = styled.tbody``;
 export const Tr = styled.tr``;
 export const Td = styled.td`
   padding-right: 2.5rem;
+  white-space: pre-wrap;
 `;
